@@ -1,5 +1,5 @@
-#json-ingore
-Json ignore is a small library using the experimental decorator feature of typescript to exclude certain properties from the serialisation process. It is usefull if you want to keep your json as small as possible or if you want to serialise a circular struckture.
+#json-ignore
+Json ignore is a small library using the experimental decorator feature of typescript to exclude certain properties from the serialisation process. It is usefull if you want to keep your json as small as possible or if you want to serialise a circular structure.
 
 ##Installation
 
@@ -9,7 +9,7 @@ npm install json-ignore --save
 
 ##Usage
 
-Since json-ignore is using a experimental feature of typescript you would want to add these two lines to your tsconfig.json
+Since json-ignore is using a experimental feature of typescript you would want to add these two lines to your tsconfig.json to prevent warnings
 
 ```json
 {
@@ -24,9 +24,9 @@ Afterwards use the ```@jsonIgnore()``` decorator to exlude properties form beein
 
 ##Example
 
+```typescript
 import {jsonIgnoreReplacer, jsonIgnore} from 'json-ignore'
 
-```typescript
 class Parent{
     @jsonIgnore()
     public arrayIgnored:string[]=["1","2","3"];
