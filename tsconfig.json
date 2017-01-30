@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"target": "ES5",
+         "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+		"module": "commonjs",
+        "sourceMap": true,
+        "noImplicitAny": false,
+        "removeComments": false,
+        "preserveConstEnums": true,
+        "lib": ["dom", "es2015.promise", "es5"]
+        
+	}
+}
