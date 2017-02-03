@@ -74,6 +74,7 @@ public child:Child=new Child();
 
 You can also change the value of a property to the value of a direct child, by using  ```@jsonReplaceByChildValue()```. This is usefull e.g. if you only want to save the id of the child.
 
+###Example
 ```typescript
 class Parent{
 
