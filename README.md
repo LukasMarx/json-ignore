@@ -54,3 +54,39 @@ console.log(JSON.stringify(new Parent(),jsonIgnoreReplacer));
 ```json
 {"array":["1","2","3"],"child":{"childPropert":"123"}}
 ```
+
+##Advanced 
+
+If you want to replace a properties value by a constat value, you can do so by using ```@jsonReplaceByConstant()```.
+
+###Example
+
+```typescript
+@jsonReplaceByConstant("id-2")
+public child:Child=new Child();
+```
+
+###Output
+
+```json
+{"child":"id-2"}
+```
+
+You can also change the value of a property to the value of a direct child, by using  ```@jsonReplaceByChildValue()```. This is usefull e.g. if you only want to save the id of the child.
+
+```typescript
+class Parent{
+
+    @jsonReplaceByChildValue("id")
+    public child:Child=new Child();
+}
+
+class Child{
+
+    public id:string="id-1";
+}
+```
+###Output
+```json
+{"child":"id-1"}
+```
