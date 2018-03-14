@@ -11,10 +11,7 @@
         "type": "git",
         "url": "https://github.com/LukasMarx/json-ignore"
     },
-    "files": [
-        "index.js",
-        "index.d.ts"
-    ],
+    "files": ["index.js", "index.d.ts"],
     "scripts": {
         "build": "tsc index.ts --declaration index.ts",
         "benchmark": "tsc benchmark/benchmark.ts && node benchmark/benchmark.js",
