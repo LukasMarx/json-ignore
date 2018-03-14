@@ -3,6 +3,7 @@
     "version": "0.3.0",
     "description": "",
     "main": "index.js",
+    "types" : "index.d.ts",
     "author": "Lukas Marx",
     "license": "MIT",
     "homepage": "https://github.com/LukasMarx/json-ignore#readme",
