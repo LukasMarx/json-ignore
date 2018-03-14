@@ -1,9 +1,9 @@
 {
     "name": "json-ignore",
-    "version": "0.3.0",
+    "version": "0.3.1",
     "description": "",
     "main": "index.js",
-    "types" : "index.d.ts",
+    "types": "index.d.ts",
     "author": "Lukas Marx",
     "license": "MIT",
     "homepage": "https://github.com/LukasMarx/json-ignore#readme",
