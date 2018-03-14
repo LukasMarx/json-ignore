@@ -1,16 +1,22 @@
 {
-  "name": "json-ignore",
-  "version": "0.2.0",
-  "description": "",
-  "main": "index.js",
-  "author": "Lukas Marx",
-  "license": "MIT",
-  "homepage": "https://github.com/LukasMarx/json-ignore#readme",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/LukasMarx/json-ignore"
-  },
-  "dependencies": {
-    "reflect-metadata": "^0.1.9"
-  }
+    "name": "json-ignore",
+    "version": "0.2.0",
+    "description": "",
+    "main": "index.js",
+    "author": "Lukas Marx",
+    "license": "MIT",
+    "homepage": "https://github.com/LukasMarx/json-ignore#readme",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/LukasMarx/json-ignore"
+    },
+    "scripts": {
+        "build": "tsc index.ts --declaration index.ts"
+    },
+    "dependencies": {
+        "reflect-metadata": "^0.1.9"
+    },
+    "devDependencies": {
+        "typescript": "^2.7.2"
+    }
 }
